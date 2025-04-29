@@ -8,11 +8,11 @@
 
 function myButtonClicked() {
   const userAge = document.getElementById("user-age").value
-  const days = document.getElementsByName("day")
+  const days = document.getElementById("user-date").value
 
 
   // process
-  if (($day == "Tuesday" || $day == "tuesday" || $day == "thursday" || $day == "Thursday") || ($age > 12 && $age < 21)) {
+  if ((days == "Tuesday" || days == "tuesday" || days == "thursday" || days == "Thursday") || (userAge > 12 && userAge < 21)) {
         document.getElementById("answer").innerHTML = "<h4>You're eligible for student pricing!</h4>"
         } else {
         document.getElementById("answer").innerHTML = "<h4>You must pay regular price!</h4>"
