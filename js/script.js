@@ -8,13 +8,14 @@
 
 function myButtonClicked() {
   const userAge = document.getElementById("user-age").value
-  const userDay = document.getElementById("day").value
+  const days = document.getElementsByName("day")
+  const tuesday = days[1].checked  // Tuesday is index 1
+  const thursday = days[3].checked // Thursday is index 3
 
-  // proces
-  if ((userDay == "2" || userDay == "3") || (userAge > 12 && age < 21)) {
-    // Display the number
-    document.getElementById("answer").innerHTML = "<p>You're eligible for student pricing !</p>"
-  } else{
-    document.getElementById("answer").innerHTML = "<p>You must pay regular price !</p>"
-}
+  // process
+  if ((tuesday || thursday) || (userAge > 12 && userAge < 21)) {
+    document.getElementById("answer").innerHTML = "<p>You're eligible for student pricing!</p>"
+  } else {
+    document.getElementById("answer").innerHTML = "<p>You must pay regular price!</p>"
+  }
 }
