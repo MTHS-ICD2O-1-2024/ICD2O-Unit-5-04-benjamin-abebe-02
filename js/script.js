@@ -18,3 +18,4 @@ function myButtonClicked() {
         document.getElementById("answer").innerHTML = "<h4>You must pay regular price!</h4>"
         }
       }
+      
