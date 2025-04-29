@@ -1,90 +1,66 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit5-04-HTML-MDL -->
+<!-- ICS2O-Unit5-03-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Website made by HTML, CSS and JS" />
+  <meta name="description" content="Watch a Movie, in JS" />
   <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Benjamin" />
+  <meta name="author" content="Benjamin Abebe" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Day and age for muesem, with JS</title>
+  <title>Watch a Movie, in PHP</title>
 </head>
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Day and age for muesem, with JS</span>
+        <span class="mdl-layout-title">Watch a Movie, in PHP</span>
       </div>
     </header>
-  <main class="mdl-layout__content">
-    <div class="right-image">
-      <img src="./movie_ratings.jpg" alt="Picture of the first Hello World" />
-    </div>
-    <div class="page-content">Enter in your age</div>
-    <br />
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-age" />
-        <label class="mdl-textfield__label" for="demo-input">Number...</label>
-        <span class="mdl-textfield__error">Input is not a number</span>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./movie_ratings.jpg" alt="computer user" />
       </div>
-    </br>
-      <!-- Accent-colored raised button with ripple -->
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="1" checked>
-        <span class="mdl-js-radio__label">Monday</span>
-      </label>
-      
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="2">
-        <span class="mdl-js-radio__label">Tuesday</span>
-      </label>
-      
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="3">
-        <span class="mdl-js-radio__label">Wednesday</span>
-      </label>
-      
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="4">
-        <span class="mdl-js-radio__label">Thursday</span>
-      </label>
-      
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="5">
-        <span class="mdl-js-radio__label">Friday</span>
-      </label>
-      
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="6">
-        <span class="mdl-js-radio__label">Saturday</span>
-      </label>
 
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-        <input type="radio" class="mdl-radio__button" name="day" value="7">
-        <span class="mdl-js-radio__label">Sunday</span>
-      </label>
-      <br />
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="myButtonClicked()" type="button">
-        See Results
-      </button>
-    </form>
-    <div class="page-content-answer">
-      <div id="answer"></div>
-    </div>
-  </main>
+      <!--  using a new div to prevent all the elements from sticking on the sides -->
+      <div class="center-content">
+        <div class="page-content">Enter your age.</div>
+        <br />
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-age"
+              id="user-input" />
+            <label class="mdl-textfield__label" for="demo-input">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number</span>
+          </div>
+          <br />
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" name="day" id="user-input" />
+            <label class="mdl-textfield__label" for="demo-input">Day</label>
+            <span class="mdl-textfield__error">Input is not a number</span>
+          </div>
+        </br>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()" type="button">
+            Find Movie type!
+          </button>
+        </form>
+        <br />
+        <div class="page-content-answer">
+          <div id="answer"></div>
+        </div>
+      </div>
+    </main>
   </div>
 </body>
 
